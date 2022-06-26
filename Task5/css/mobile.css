@@ -1,0 +1,88 @@
+#navbar .container {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#navbar ul li a {
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 3px transparent solid;
+}
+
+.l-heading {
+  font-size: 1.5rem;
+}
+
+.lead {
+  font-size: 0.7rem;
+}
+
+.banner-img {
+  height: calc(100vh - 140px);
+}
+
+#showcase-main {
+  height: calc(100vh - 140px);
+}
+
+.btn {
+  padding: 0.3rem 1.5rem;
+}
+
+.container2 {
+  left: 0;
+  width: 100vw;
+  flex-direction: column;
+  margin-top: 350px;
+}
+
+.image1 {
+  height: 80%;
+  margin-top: 5%;
+}
+
+.title1 {
+  font-size: 16px;
+}
+
+.paragraph {
+  font-size: 10px;
+}
+
+.container3 .card .content h2 {
+  position: absolute;
+  top: -0px;
+  right: 30px;
+  font-size: 4em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.container3 .card .content h3 {
+  font-size: 1em;
+  color: #fff;
+  z-index: 1;
+}
+
+.container3 .card .content p {
+  font-size: 0.5em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.container3 {
+  margin-top: 300px;
+}
+
+.container3 .card {
+  height: 180px;
+}
+
+footer {
+  height: 50vh;
+}
+
+.footer-form {
+  margin-top: 4rem;
+}

@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --primary-color: #d67c41;
+  --secondary-color: #8c3131;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --esports-color: #a55000;
+  --football-color: #183c28;
+  --handball-color: var(--secondary-color);
+  --baseball-color: #0091d5;
+  --basket-color: #20283e;
+}
+
+/* Start of basic css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+/* End of basics */
+/* Utility classes */
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-sec {
+  background-color: var(--secondary-color);
+}
+
+.btn:hover {
+  background: #ffa160;
+}
+
+.btn-dark {
+  background: var(--dark-color);
+}
+
+.btn-dark:hover {
+  background: #555;
+}
+
+.btn-trans {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+}
+
+.btn-showcase {
+  border: 2px solid var(--primary-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+/* End of utilities */
+/* Navbar */
+#navbar {
+  position: sticky;
+  color: #fff;
+  background: var(--dark-color);
+  top: 0;
+  z-index: 1;
+}
+
+#navbar .container {
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar img {
+  padding-top: 0.5rem;
+  max-width: 100%;
+  height: 50px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  font-size: 1.2rem;
+  display: flex;
+  color: #fff;
+  margin: 0 1rem;
+  border-bottom: 6px transparent solid;
+  padding: 1rem 0;
+  transition: all 0.5s;
+}
+
+#navbar ul li a:hover {
+  color: #d6d6d6;
+  border-color: var(--secondary-color);
+}
+
+#navbar ul li .current {
+  border-color: var(--primary-color);
+}
+
+#navbar ul li .current:hover {
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+/* End of nabar works */
+/* Start of IndexHTML */
+.banner-img {
+  background: url("../img/showcasebgimg.jpg") no-repeat center center/cover;
+  height: calc(100vh - 70px);
+}
+
+#showcase-main {
+  height: calc(100vh - 70px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcasetrans {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.famousteamsimg {
+  position: relative;
+  background: url("../img/landingteams.jpg") no-repeat center center/cover;
+}
+
+header .showcase-container {
+  height: calc(100vh - 60px);
+  display: flex;
+  margin: auto;
+}
+
+.showcase-content {
+  color: #fff;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 70%;
+}
+
+.showcase-right {
+  flex-basis: 25%;
+  margin: auto;
+  padding: 1.5rem 0;
+}
+
+.showcase-rightcontent {
+  border-radius: 0.7rem;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.showcase-rightcontent img {
+  transition: all 0.5s ease-in;
+  width: 250px;
+  opacity: 1;
+}
+
+.showcase-rightcontent img:hover {
+  transform: rotate(10deg) scale(1.1);
+  opacity: 0.7;
+}
+
+.showcase-contentcentered {
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.cat {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.cat-esports {
+  background: var(--esports-color);
+}
+
+.cat-football {
+  background: var(--football-color);
+}
+
+.cat-handball {
+  background: var(--handball-color);
+}
+
+.cat-baseball {
+  background: var(--baseball-color);
+}
+
+.cat-basket {
+  background: var(--basket-color);
+}
+
+.downtag {
+  color: var(--primary-color);
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+
+.downtag:hover {
+  color: var(--esports-color);
+  background: whitesmoke;
+  transform: scale(1.1);
+}
+
+.bottom-line {
+  height: 5px;
+  width: 10rem;
+  background: var(--primary-color);
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.bottom-line:hover {
+  width: 13rem;
+}
+
+#parts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part {
+  flex-basis: 20%;
+  text-align: center;
+  color: #fff;
+}
+
+.part-content {
+  padding: 1rem 0;
+  width: 80%;
+  left: 10%;
+  position: relative;
+}
+
+.part i {
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.part:nth-child(even) {
+  background: var(--primary-color);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0.3, 0, 0.7);
+}
+
+.part:nth-child(odd) {
+  background: var(--dark-color);
+}
+
+.part i:hover {
+  transform: rotate(5deg) scale(1.2);
+  margin-bottom: 1rem;
+}
+
+.part h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+main.articles {
+  display: flex;
+}
+
+main.articles aside {
+  color: var(--dark-color);
+  padding: 1.5rem;
+  background-color: var(--light-color);
+  flex: 20%;
+}
+
+main.articles section {
+  padding: 1.5rem;
+  background-color: white;
+  flex: 60%;
+}
+
+main.articles aside.right {
+  text-align: center;
+  flex: 20%;
+}
+
+.subscribeForm input {
+  width: 90%;
+  margin: 0.2rem 0;
+}
+
+.subscribeForm input[type="email"] {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main.articles aside.right img {
+  transition: all 0.5s ease-in;
+  height: 150px;
+  max-width: 100%;
+}
+
+main.articles aside.right img:hover {
+  filter: saturate(1.2);
+  transform: rotate(1deg) scale(1.2);
+}
+
+.article-content {
+  display: flex;
+}
+
+.article-content .left {
+  flex-basis: 80%;
+}
+
+.article-content .right {
+  flex-basis: 20%;
+}
+
+.article-content .awards {
+  text-align: center;
+}
+
+.container article {
+  padding-left: 0.5rem;
+}
+
+.article-content .awards i {
+  color: var(--secondary-color);
+  padding-bottom: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.article-content .awards i:hover {
+  color: var(--primary-color);
+  transform: rotate(5deg) scale(1.2);
+  padding-bottom: 1.2rem;
+}
+
+footer {
+  background: #333;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+.footer-container {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.footer-heading h2 {
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+.footer-heading a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+}
+
+.footer-heading a:hover {
+  transition: 0.3s ease-out;
+  color: var(--primary-color);
+}
+
+.footer-form h2 {
+  margin-bottom: 2rem;
+}
+
+#footer-email {
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer-email::placeholder {
+  color: #b1b1b1;
+}
+
+#footer-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+#footer-btn:hover {
+  cursor: pointer;
+  background: #ffa160;
+  transition: all 0.4s ease-out;
+}

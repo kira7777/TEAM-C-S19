@@ -1,0 +1,55 @@
+#navbar .container {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+#navbar ul li a {
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: 3px transparent solid;
+}
+.l-heading {
+  font-size: 1.5rem;
+}
+.m-heading {
+  font-size: 1.6rem;
+}
+.lead {
+  font-size: 0.7rem;
+}
+.banner-img {
+  height: calc(100vh - 140px);
+}
+#showcase-main {
+  height: calc(100vh - 140px);
+}
+.btn {
+  padding: 0.3rem 1.5rem;
+}
+header .showcase-container {
+  flex-direction: column;
+}
+
+.showcase-content {
+  width: 100%;
+}
+
+.showcase-rightcontent {
+  flex-basis: auto;
+}
+.downtag {
+  visibility: hidden;
+}
+#parts {
+  flex-direction: column;
+}
+main.articles {
+  flex-direction: column;
+}
+.article-content {
+  flex-direction: column;
+}
+main.articles aside.right img {
+  height: 50px;
+  max-width: 100%;
+}

@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+:root {
+  --primary-color: #d67c41;
+  --secondary-color: #8c3131;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+}
+
+/* Start of basic css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+/* End of basics */
+/* Utility classes */
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  background: #ffa160;
+}
+
+.btn-dark {
+  background: var(--dark-color);
+}
+
+.btn-dark:hover {
+  background: #555;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.container {
+  background-color: var(--light-color);
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+/* End of utilities */
+/* Navbar */
+#navbar {
+  position: sticky;
+  color: #fff;
+  background: var(--dark-color);
+  top: 0;
+  z-index: 1;
+}
+
+#navbar .container {
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar img {
+  padding-top: 0.5rem;
+  max-width: 100%;
+  height: 50px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  font-size: 1.2rem;
+  display: flex;
+  color: #fff;
+  margin: 0 1rem;
+  border-bottom: 6px transparent solid;
+  padding: 1rem 0;
+  transition: all 0.5s;
+}
+
+#navbar ul li a:hover {
+  color: #d6d6d6;
+  border-color: var(--secondary-color);
+}
+
+#navbar ul li .current {
+  border-color: var(--primary-color);
+}
+
+#navbar ul li .current:hover {
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+/* End of nabar works */
+/*----------------Famous Players header---------*/
+/*---------- Famous PLayers title------------*/
+main .title {
+  background-image: url("../img/ball2.jpg");
+  background-size: cover;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+}
+
+main.title .background {
+  padding-top: 10rem;
+  text-align: center;
+  color: white;
+}
+
+main .title h1 {
+  margin: .3rem;
+  color: #252839;
+  margin: 0 auto;
+  padding-top: 150px;
+  font-family: 'New Tegomin', serif;
+  font-size: 60px;
+}
+
+/*----------------Animated text---------*/
+main .title h1 {
+  background-image: -webkit-linear-gradient(#344E41 50%, #CFE1B9 50%);
+  background-size: 100% 50px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+  font-size: 100px;
+  opacity: 0.7;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+/*--------------x--Animated text-x--------*/
+/*---------------x-Famous players header-x--------*/
+/*--------x--Famous players title--x----------*/
+/*--------Famous players--------------*/
+body {
+  background-color: #111;
+  height: 1000px;
+}
+
+.containerr {
+  padding: 40px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  height: 280px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  height: 470px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .img {
+  height: 200px;
+  width: 100%;
+}
+
+.card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card .top-text {
+  padding: 5px;
+}
+
+.card .top-text .name {
+  font-size: 25px;
+  font-weight: 600;
+  color: #03071e;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.card .top-text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #81b29a;
+  line-height: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.card .bottom-text {
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+.card:hover .bottom-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .bottom-text .text {
+  text-align: justify;
+}
+
+@media screen and (max-width: 978px) {
+  .containerr {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+/*------X---footer --X----------*/
+footer {
+  background: #333;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+.footer-container {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.footer-heading h2 {
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+.footer-heading a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+}
+
+.footer-heading a:hover {
+  transition: 0.3s ease-out;
+  color: var(--primary-color);
+}
+
+.footer-form h2 {
+  margin-bottom: 2rem;
+}
+
+#footer-email {
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer-email::placeholder {
+  color: #b1b1b1;
+}
+
+#footer-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+#footer-btn:hover {
+  cursor: pointer;
+  background: #ffa160;
+  transition: all 0.4s ease-out;
+}
